@@ -11,15 +11,51 @@
         <div class="nav-content">
             <div class="logo">
                 <a href="/index.html">
-                    <img src="https://erin-caitlin.github.io/all-images/VISIO/LOGO.png"></div>
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/Visio - Logo.png"></div>
                 </a>
-            <div class="menu">Home</div>
+            <div class="menu"><img src="https://erin-caitlin.github.io/all-images/VISIO/burger-menu.png"></div></div>
         </div>
     </nav>
     <main>
         <div class="content">
             <div class="slider">
-                <img src="https://erin-caitlin.github.io/all-images/VISIO/1.jpg">
+                <div class="label2"></div>
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="https://erin-caitlin.github.io/all-images/VISIO/first-slide.jpg" alt="First Slide">
+                        <div class="label">
+                            <p>Look beyond the ordinary</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://erin-caitlin.github.io/all-images/VISIO/second slide.jpg" alt="Second Slide">
+                        <div class="label">
+                            <p>We can and we will</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://erin-caitlin.github.io/all-images/VISIO/third slide.png" alt="Third Slide">
+                        <div class="label">
+                            <p>We leave no stone unturned</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://erin-caitlin.github.io/all-images/VISIO/2.jpg" alt="Fourth Slide">
+                        <div class="label">
+                            <p>Driven by insight, defined by results</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="showNextSlide()">
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/next button.png" alt="Next">
+                </button>
+
+                <div class="carousel-indicators">
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/page indicator.png" alt="Slide 1" class="indicator" data-index="0">
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/carousel indicators.png" alt="Slide 2" class="indicator" data-index="1">
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/carousel indicators.png" alt="Slide 3" class="indicator" data-index="2">
+                    <img src="https://erin-caitlin.github.io/all-images/VISIO/carousel indicators.png" alt="Slide 4" class="indicator" data-index="3">
+                </div>
             </div>
             <div class="section1">
                 <p class="lead">Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly focused and dynamic team manage assests across listed strategies for a diversified client base that includes some of the world's largest and most sophisticated investors.</p>
@@ -69,5 +105,7 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
