@@ -210,10 +210,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #2659BF;
-    border: 1px solid #214DA6;
+    border: .1rem solid #214DA6;
     width: 20rem;
     font-size: x-small;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 /* Media Queries */
