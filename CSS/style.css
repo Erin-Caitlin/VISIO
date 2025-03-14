@@ -80,8 +80,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 96.2%;
-    right: 160px;
+    top: 96%;
+    right: 120px;
     z-index: 10;
 }
 
@@ -137,7 +137,7 @@
 /* Carousel next button */
 .next-btn {
     position: absolute;
-    right: 170px;
+    right: 130px;
     top: 64%;
     transform: translateY(-50%);
     cursor: pointer;
