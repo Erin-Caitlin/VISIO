@@ -47,7 +47,7 @@
 .carousel-slide img {
     margin-top: 7rem;
     width: 100%;
-    max-width: 70rem;
+    max-width: 75rem;
     height: 30rem;
     display: block;
 }
@@ -131,7 +131,7 @@
     background-color: #000;
     padding: 2.9rem;
     z-index: 10;
-    width: 9.7rem;
+    width: 7.2rem;
 }
 
 /* Carousel next button */
