@@ -31,4 +31,13 @@ $(document).ready(function () {
         $indicators.removeClass('active');
         $($indicators[currentIndex]).addClass('active');
     }
+
+    // Function to update the active indicator and animate labels
+    function updateIndicators() {
+        $slides.removeClass('active');  // Remove active from all slides
+        $($slides[currentIndex]).addClass('active');  // Add active to current slide
+
+        $indicators.removeClass('active');
+        $($indicators[currentIndex]).addClass('active');
+    }
 });

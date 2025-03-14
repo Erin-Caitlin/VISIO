@@ -89,7 +89,7 @@
     width: 1.3rem;
     object-fit: cover;
     cursor: pointer;
-    /* transition: opacity 0.3s ease, transform 0.3s ease; */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* Active indicator */
@@ -113,6 +113,9 @@
     font-size: 1.1rem;
     z-index: 10;
     width: 35.7rem;
+
+    /* animation */
+    
 }
 
 .label p {
@@ -217,22 +220,20 @@
 }
 
 /* Media Queries */
-
 /* 1024px and below */
 @media (max-width: 1024px) {
     .slider img {
         margin: 0 auto;
         width: 90%;
-        display: block;
     }
-
+    .carousel-slide img {
+        object-fit: cover;
+        object-position: top;
+    }
     .section1 {
-        flex-direction: row;
         gap: 1rem;
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
-        width: 100%;
-        max-width: 62rem;
     }
 
     .section1 img {
@@ -241,6 +242,34 @@
 
     .section1 p {
         width: 35rem;
+    }
+
+    /* Carousel indicators */
+    .carousel-indicators {
+        top: 95%;
+        right: 80px;
+    }
+
+    /* Blue label across slider image */
+    .label {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        width: 27rem;
+    }
+
+    /* Black label on the right of carousel */
+    .label2 {
+        padding: 2.3rem;
+        width: 5.7rem;
+    }
+
+    /* Carousel next button */
+    .next-btn {
+        right: 80px;
+    }
+
+    .next-btn img {
+        width: 3rem;
     }
 
     .section2 {
@@ -253,219 +282,130 @@
     .page-links {
         margin: 0;
         font-size: .1rem;
+        min-height: 9rem;
     }
 
     .section3 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         gap: 1rem;
-        width: 100%;
         max-width: 55rem;
-    }
-
-    .mini-links {
-        display: flex;
-        align-content: center;
-        width: 100%;
     }
 }
 
 /* 768px and below */
 @media (max-width: 768px) {
-    .slider img {
-        margin: 0 auto;
-        width: 90%;
-        display: block;
+    /* Blue label across slider image */
+    .label {
+        padding: 1rem;
+        font-size: 70%;
+        width: 22rem;
     }
 
-    .section1 {
-        flex-direction: row;
-        gap: 1.5rem;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        width: 83%;
+    /* Black label on the right of carousel */
+    .label2 {
+        padding: 1.5rem;
+        width: 5rem;
+    }
+
+    /* Carousel next button */
+    .next-btn {
+        right: 70px;
+    }
+    .next-btn img {
+        width: 2rem;
+    }
+
+    .section1, .section2, .section3 {
+        max-width: 40rem;
+    }
+
+    .section1 p{
+        font-size: smaller;
     }
 
     .section1 img {
-        width: 15rem;
+        width: 13rem;
     }
 
-    .section1 p {
-        width: 35rem;
+    .section2 p {
+        font-size: 17px;
     }
 
-    .section2 {
-        flex-direction: row;
-        gap: 1rem;
-        width: 100%;
-        max-width: 40rem;
+    .section2 img {
+        width: 1.5rem;
     }
 
-    /* Stack page links vertically on smaller screens */
     .page-links {
-        margin: 0;
-        font-size: smaller;
-        width: 100%;
-        max-width: 40rem;
+        min-height: 7rem;
     }
 
     .section3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-        max-width: 40rem;
+        flex-wrap: wrap;
     }
 
     .mini-links {
-        display: flex;
-        align-content: center;
         width: 100%;
     }
 }
 
 /* 560px and below */
 @media (max-width: 560px) {
-    .nav-content {
-        flex-direction: row;
-        align-items: center;
+    /* landing page images  */
+    .carousel-slide img {
+        height: 20rem;
+        object-fit: cover;
+        object-position: top !important;
+    }
+    /* Carousel indicators */
+    .carousel-indicators {
+        top: 92%;
+        right: 50px;
     }
 
-    .logo img {
-        width: 10rem;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .slider img {
-        margin: 0 auto;
-        width: 90%;
-        display: block;
-    }
-
-    .section1 {
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        max-width: 30rem;
-    }
-
-    .section1 img {
-        width: 8rem;
-    }
-
-    .section1 p {
-        width: 20rem;
-        font-size: small;
-    }
-
-    .section2 {
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 1rem;
-        font-size: .5rem;
-    }
-
-    /* Stack page links vertically on smaller screens */
-    .page-links {
-        min-height: auto;
-        padding: 0.5rem;
-        margin-bottom: 0;
-        width: 85%;
-    }
-
-    .page-links img {
+    .carousel-indicators .indicator {
         width: 1rem;
     }
 
-    .page-links p {
-        font-size: 1.2rem;
+    /* Blue label across slider image */
+    .label {
+        top: 70%;
+        left: 0;
+        right: auto;
+        padding: 1rem;
+        font-size: 12px;
+        width: 20rem;
     }
 
-    .section3 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: x-small;
-        gap: 1rem;
-        width: 100%;
-        max-width: 30rem;
-        flex-wrap: wrap;
+    /* Black label on the right of carousel */
+    .label2 {
+        top: 70%;
+        padding: 1.6rem;
+        width: 4.4rem;
     }
 
-    .mini-links {
-        display: flex;
-        align-content: center;
-        width: 100%;
-        font-size: 95%;
-    }
-}
-
-/* 320px and below */
-@media (max-width: 320px) {
-    .nav-content {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo img {
-        width: 7rem;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .slider img {
-        margin: 0 auto;
-        width: 90%;
-        display: block;
+    /* Carousel next button */
+    .next-btn {
+        top: 70%;
+        right: 50px;
     }
 
     .section1 {
-        flex-direction: column;
-        gap: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        width: 100%;
-        max-width: 20rem;
+        max-width: 30rem;
     }
 
     .section1 img {
         width: 8rem;
     }
 
-    .section1 p {
-        width: 15rem;
-        font-size: x-small;
-    }
-
     .section2 {
-        flex-direction: column;
-        gap: 1rem;
-        font-size: .3rem;
+        max-width: 30rem;
     }
 
     /* Stack page links vertically on smaller screens */
     .page-links {
         min-height: auto;
         padding: 0.5rem;
-        margin-bottom: 0;
-        width: 80%;
     }
 
     .page-links img {
@@ -477,19 +417,106 @@
     }
 
     .section3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         font-size: x-small;
+        max-width: 30rem;
+    }
+}
+
+/* 320px and below */
+@media (max-width: 320px) {
+    .nav-content {
+        justify-content: space-evenly;
+        height: 2rem;
+    }
+
+    .logo img {
+        width: 5rem;
+    }
+
+    /* landing page images  */
+    .carousel-slide img {
+        margin-top: 3rem;
+        height: auto;
+        object-fit: contain;
+    }
+    /* Carousel indicators */
+    .carousel-indicators {
+        top: 80%;
+        right: 25px;
+    }
+
+    .carousel-indicators .indicator {
+        width: .5rem;
+    }
+
+    /* Blue label across slider image */
+    .label {
+        top: 62%;
+        left: 0;
+        right: auto;
+        padding: 1%;
+        font-size: 6px;
+        width: 10rem;
+    }
+
+    /* Black label on the right of carousel */
+    .label2 {
+        top: 62%;
+        padding: .5rem;
+        width: 3.5rem;
+    }
+
+    /* Carousel next button */
+    .next-btn {
+        top: 62%;
+        right: 30px;
+    }
+
+    .next-btn img {
+        width: 0.8rem;
+    }
+
+    .section1 {
+        flex-direction: column;
         gap: 1rem;
-        width: 100%;
-        max-width: 20rem;
+    }
+
+    .section1 img {
+        width: 5rem;
+    }
+
+    .section1 p {
+        width: 80%;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .page-links {
+        width: 80%;
+    }
+
+    .page-links img {
+        width: .6rem;
+    }
+
+    .page-links p {
+        font-size: 0.7rem;
+    }
+
+    .section3 {
+        flex-direction: column;
     }
 
     .mini-links {
-        display: flex;
-        align-content: center;
         width: 80%;
-        font-size: 95%;
+        padding: .4rem;
+    }
+
+    .mini-links p {
+        font-size: 6.5px;
     }
 }
